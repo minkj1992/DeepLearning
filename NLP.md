@@ -59,3 +59,23 @@ Error Function : "https://shuuki4.files.wordpress.com/2016/01/nsequation.png"
 
 ## 결론
 
+
+-------------------------------
+# 용어 정리
+
++ `Word Embedding`: 문자로 이루어진 단어를 숫자로 변환하는 것
+word embedding에는 초기 모델인 NNLM과 RNNLM이 있고, 최근에 발표됐고 현재 가장 많이 사용하는 Word2Vec 모델은 CBOW와 Skip-Gram 모델을 사용해서 학습되어진다.
+word embedding 프로세스에는 신경망, 차원감소, 확률적 모델, 문맥상 표현 등의 여러 가지 처리 과정들이 포함된다.
+
++ `W2V` = `CBOW` + `Skip-Gram`
+
++ VSMs(Vector Space Models)
+
+> "자연어 처리(NLP) 에서 오랫동안 사용되어진 방법으로, 같은 컨텍스트에 있는 단어는 같은 semantic meaning을 공유한다고 가정한다. 이런 가정을 Distributional Hypothesis라고 한다. 이런 가정을 이용해서 자연어 처리를 하는 기법에는 크게 두 가지가 있다."
+
++ 1) Count-Based Methods (e.g. Latent Semantic Analysis)
+어떤 단어가 이웃 단어들과 같이 등장한 횟수를 계산하고 이 통계를 작고 밀도가 높은 벡터로 변환한다.
++ 2) Predictive Methods (e.g. Neural Probabilistic Language Models)
+작고 밀도가 높은 embeddings 벡터로 표현된 이웃 단어들을 이용해서 직접적으로 단어를 예측한다. Word2Vec은 가공하지 않은 원본 텍스트로부터 word embedding을 학습하는 계산 효율성이 좋은 predictive 모델이다.
+
+
